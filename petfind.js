@@ -52,11 +52,10 @@ function petfinder(key) {
         'query': {
           'animal': 'cat',
           'output': 'basic',
-          'location': location
+          'location': 00000
         }
       });
       opts = opts || {};
-
       _.extend(options.query, opts);
         curr._httpGet(options, callback);
       }
@@ -81,7 +80,7 @@ var infopage = function(data){
   console.log(
     getAvatar(data),
     data
-  ); 
+  );
 };
 
 // TESTS
